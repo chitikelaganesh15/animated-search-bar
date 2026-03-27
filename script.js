@@ -1,7 +1,8 @@
-const searchBox =
-document.querySelector("search-box");
-const button = document.querySelector("search-btn");
+const searchBtn = document.querySelector(".search-btn");
+const searchBox = document.querySelector(".search-box");
 
-button.addEventListener("click", () => {
+if (searchBtn && searchBox) {
+  searchBtn.addEventListener("click", () => {
     searchBox.classList.toggle("active");
-});
+  });
+}
