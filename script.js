@@ -1,6 +1,7 @@
-const searchBox = document.querySelector(".search-box");
-const searchBtn = document.querySelector(".search-btn");
+const searchBarContainerEl = document.querySelector(".search-bar-container");
 
-searchBtn.addEventListener("click", () => {
-  searchBox.classList.toggle("active");
+const magnifierEl = document.querySelector(".magnifier");
+
+magnifierEl.addEventListener("click", () => {
+  searchBarContainerEl.classList.toggle("active");
 });
